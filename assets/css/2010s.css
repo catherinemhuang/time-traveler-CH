@@ -15,10 +15,14 @@ body {
 	font-family: monospace;
 	padding: 50px;
 }
-.heading {
-	font-family: "AUTHENTIC Sans", sans-serif;
-	background-color: hsl(180deg, 100%, 50%);
+
+.Heading {
+	font-size: 20px;
+	flex-wrap: wrap;
+	gap: 10px;
+	padding: 20px;
 }
+
 .link {
 	padding: 10px;
 	display: grid;
@@ -27,6 +31,7 @@ body {
 	max-width: 800px;
 	margin: 0 auto;
 }
+
 .hyper-link {
 	padding: 20px;
 	display: flex;
