@@ -10,7 +10,38 @@
 	font-family: "AUTHENTIC Sans";
 	src: url("../fonts/authentic-sans-pro-60.woff2");
 }
+
 body {
+	font-family: monospace;
+	padding: 50px;
+}
+.heading {
 	font-family: "AUTHENTIC Sans", sans-serif;
 	background-color: hsl(180deg, 100%, 50%);
+}
+.link {
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1 fr;
+	gap: 10px;
+	max-width: 800px;
+	margin: 0 auto;
+}
+.hyper-link {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+	.portfolio {
+	grid-template-columns: 1fr 1fr; 
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.portfolio {
+	grid-template-columns: 1fr;
+	}
 }
