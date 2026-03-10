@@ -6,8 +6,12 @@
 }
 
 /* Write your CSS below (feel free to change the styles already here) */
+@font-face{
+	font-family: "ubuntu mono";
+	src: url("../fonts/UbuntuMono-Regular.ttf")
+}
 body {
-	font-family: sans-serif;
+	font-family: "ubuntu mono";
 	background-color: lightgrey;
 }
 header {
