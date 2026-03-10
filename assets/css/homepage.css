@@ -8,13 +8,13 @@
 /* Write your CSS below (feel free to change the styles already here) */
 body {
 	font-family: sans-serif;
-	background-color: yellow;
+	background-color: lightgrey;
 }
 header {
 	padding: 20px;
 	margin: 40px;
 	background-color: white;
-	border: 5px solid black;
+	border: 1cap solid black;
 }
 nav {
 	padding: 20px;
