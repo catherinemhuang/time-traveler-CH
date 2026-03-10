@@ -1,8 +1,11 @@
 /* Add styles to all elements */
 * {
-	margin: 0; /* remove default margin from all elements */
-	padding: 0; /* remove default padding from all elements */
-	box-sizing: border-box; /* fix width calculation, more info here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-sizing */
+	margin: 0;
+	/* remove default margin from all elements */
+	padding: 0;
+	/* remove default padding from all elements */
+	box-sizing: border-box;
+	/* fix width calculation, more info here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-sizing */
 }
 
 /* Write your CSS below (feel free to change the styles already here) */
@@ -14,12 +17,7 @@
 body {
 	font-family: monospace;
 	padding: 50px;
-}
-
-.Heading {
-	font-size: 20px;
-	flex-wrap: wrap;
-
+	color: black;
 }
 
 .Quote {
@@ -28,51 +26,45 @@ body {
 	gap: 5px;
 }
 
-.link {
-	display: flex;
+
+.box {
+	padding: 40px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 	gap: 20px;
 	max-width: 800px;
-	margin: 40px auto;
-}
-.links-card{
-flex: 1;
-border: 5px solid black;
-padding: 20px;
-transition: transform 0.3s ease;
+	margin: 0 auto;
 
 }
-.links-card a{
+
+.box-link {
+	background-color: none;
+	border: 2px solid black;
+	color: black;
 	text-decoration: none;
-	display: block;
-	color: black
-	gap: 10px;
-	padding: 10px;
-}
-
-.links-card: hover{
-	transform: scale (1.1);
-}
-
-.hyper-link {
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+	font-family: sans-serif;
+}
+
+.box-link img {
+	width: 100%;
+}
+
+.box-link h2 {
+	font-size: 18px;
 }
 
 @media only screen and (max-width: 800px) {
-	.portfolio {
-	grid-template-columns: 1fr 1fr; 
+	.box {
+		grid-template-columns: 1fr 1fr;
 	}
 }
 
 @media only screen and (max-width: 600px) {
-	.portfolio {
-	grid-template-columns: 1fr;
-	}
-}
-@media (max-width: 400px) {
-	.links {
-		flex-direction: column;
+	.box {
+		grid-template-columns: 1fr;
 	}
 }
