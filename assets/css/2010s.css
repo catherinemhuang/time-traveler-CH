@@ -59,6 +59,15 @@ body {
 	background-color: lightgreen;
 }
 
+.highlight{
+	background-color: lightgoldenrodyellow;
+	transition: all .5s;
+}
+
+.highlight:hover{
+	font-size: 40px;
+}
+
 .Heading {
 	padding: 10px;
 }
@@ -107,6 +116,7 @@ body {
 }
 
 .box-link:hover {
-	transform: scale3d(2.5, 1.2, 0.3);
+	transform: scale(1.1,1.1);
 	box-shadow: 8px 8px 0px black;
+	transition: all .3s;
 }
