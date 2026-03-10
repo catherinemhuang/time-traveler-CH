@@ -45,14 +45,62 @@ body {
 }
 
 .Question {
+	display: flex;
 	font-size: 28px;
-	margin: 30px;
+	margin: 30px auto;
 	max-width: 250px;
 	background-color: #cdffb0;
 	justify-content: center;
 	align-items: center;
-
+	height: 50px;
+	position: relative;
+	animation-name: box-story;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
 }
+
+.Question1 {
+	display: flex;
+	font-size: 28px;
+	margin: 30px auto;
+	max-width: 250px;
+	background-color: #cdffb0;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	position: relative;
+	animation-name: box-story1;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes box-story {
+	0% {
+		left: -200px;
+	}
+
+	50% {
+		left: 200px;
+	}
+
+	100% {
+		left: -200px;
+	}
+}
+@keyframes box-story1 {
+	0% {
+		left: 200px;
+	}
+
+	50% {
+		left: -200px;
+	}
+
+	100% {
+		left: 200px;
+	}
+}
+
 
 .Quote {
 	font-size: 16px;
@@ -62,12 +110,12 @@ body {
 	background-color: lightgreen;
 }
 
-.highlight{
-	background-color: #cdffb0 ;
+.highlight {
+	background-color: #cdffb0;
 	transition: all .5s;
 }
 
-.highlight:hover{
+.highlight:hover {
 	font-size: 40px;
 }
 
@@ -120,7 +168,7 @@ body {
 }
 
 .box-link:hover {
-	transform: scale(1.1,1.1);
+	transform: scale(1.1, 1.1);
 	box-shadow: 8px 8px 0px black;
 	transition: all .3s;
 }
