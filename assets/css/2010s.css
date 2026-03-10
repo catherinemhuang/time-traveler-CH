@@ -47,7 +47,10 @@ body {
 .Question {
 	font-size: 28px;
 	margin: 30px;
-	max-width: 800px;
+	max-width: 250px;
+	background-color: #cdffb0;
+	justify-content: center;
+	align-items: center;
 
 }
 
@@ -60,7 +63,7 @@ body {
 }
 
 .highlight{
-	background-color: lightgoldenrodyellow;
+	background-color: #cdffb0 ;
 	transition: all .5s;
 }
 
