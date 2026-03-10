@@ -3,29 +3,76 @@
 	margin: 0; /* remove margin from all elements */
 	padding: 0; /* remove padding from all elements */
 	box-sizing: border-box; /* fix width calculation, more info here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-sizing */
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 /* Write your CSS below (feel free to change the styles already here) */
-@font-face{
-	font-family: "ubuntu mono";
-	src: url("../fonts/UbuntuMono-Regular.ttf")
-}
+
+
 body {
-	font-family: "ubuntu mono";
-	background-color: lightgrey;
+    background-color: rgb(240, 240, 240);
+    color: #1c1c1e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
 }
-header {
-	padding: 20px;
-	margin: 40px;
-	background-color: white;
-	border: 1px solid black;
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
 }
+
+header p {
+    font-size: 15px;
+    color: #555;
+}
+
 nav {
-	padding: 20px;
-	margin: 40px;
-	background-color: white;
-	border: 1px solid black;
+    margin-top: 50px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
 }
-ul {
-	margin: 20px;
+
+nav h2 {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+nav li {
+    perspective: 800px;
+}
+
+nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #1c1c1e;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 600;
+}
+nav a:hover {
+    transform: translateY(-15px) scale(1.05) rotateX(5deg);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+nav a::before {
+    content: "📁";
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
