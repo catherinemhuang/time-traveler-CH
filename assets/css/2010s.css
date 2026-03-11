@@ -66,7 +66,6 @@ body {
 	animation-iteration-count: infinite;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 	border-radius: 12px;
-
 }
 
 .Question1 {
@@ -85,8 +84,7 @@ body {
 	animation-iteration-count: infinite;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 	border-radius: 12px;
-
-
+	
 }
 
 @keyframes box-story {
@@ -138,8 +136,7 @@ body {
 	text-align: center;
 	margin: 15px auto;
 	font-size: 18px;
-	background-color: rgba(255, 255, 255, 0.48) ;
-
+	background-color: rgba(255, 255, 255, 0.7);
 }
 
 
