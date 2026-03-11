@@ -192,3 +192,39 @@ body {
 	box-shadow: 8px 8px 0px rgb(136, 12, 111);
 	transition: all .3s;
 }
+
+.star
+{
+    position: absolute;
+    top: -20px;
+    color: rgb(255, 240, 242);
+    animation: animate 5s linear infinite;
+	pointer-events: none;
+}
+.star::before
+{
+    content: '\f5fc';
+    font-family: fontAwesome;
+    font-family: fontAwesome;
+    text-shadow: 0 0 5px lightpink,
+    0 0 20px lightpink,
+    0 0 50px lightpink;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    80%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
