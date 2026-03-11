@@ -11,12 +11,13 @@
 
 body {
     background-color: rgb(240, 240, 240);
-    color: #1c1c1e;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px 20px;
 }
+
 header h1 {
     font-size: 40px;
     margin-bottom: 10px;
@@ -36,7 +37,7 @@ nav {
 
 nav h2 {
     margin-bottom: 20px;
-    font-size: 15px;
+    font-size: 23px;
 }
 
 nav ul {
@@ -47,19 +48,18 @@ nav ul {
     flex-wrap: wrap;
 }
 
-nav li {
-    perspective: 800px;
-}
+
+
 
 nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: #1c1c1e;
-    background-color: #ffffff;
+    color: black;
+    background-color: white;
     padding: 20px;
-    width: 150px;
+    width: 100px;
     height: 150px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -73,6 +73,6 @@ nav a:hover {
 
 nav a::before {
     content: "📁";
-    font-size: 3rem;
-    margin-bottom: 10px;
+    font-size: 40px;
+    margin-bottom: 15px;
 }
