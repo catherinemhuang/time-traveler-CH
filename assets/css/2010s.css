@@ -123,7 +123,7 @@ body {
 
 .highlight {
 	background-color: #cdffb0;
-	transition: all .5s;
+	transition: ease-in-out 1s;
 }
 
 .highlight:hover {
@@ -138,8 +138,13 @@ body {
 	font-size: 18px;
 	background-color: rgba(255, 255, 255, 0.7);
 	border: 5px double darkorchid;
+	border-radius: 12px;
 }
 
+.Heading:hover{
+	transform: scale(1.1, 1.1);
+	transition: ease-in-out .7s;
+}
 
 .box {
 	padding: 40px;
@@ -203,7 +208,7 @@ body {
 }
 .star::before
 {
-    content: '\f5fc';
+    content: '\f031';
     font-family: fontAwesome;
     font-family: fontAwesome;
     text-shadow: 0 0 5px lightpink,
